@@ -1,0 +1,403 @@
+/* 🌌 Base Setup */
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #0d1117; /* Deep modern dark tech color */
+  color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Floating Glowing Orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  animation: floatOrb 12s infinite ease-in-out alternate;
+}
+.orb-1 { width: 500px; height: 500px; background: rgba(99, 102, 241, 0.25); top: -10%; left: -10%; }
+.orb-2 { width: 400px; height: 400px; background: rgba(168, 85, 247, 0.2); bottom: 20%; right: -10%; animation-delay: -4s; }
+.orb-3 { width: 300px; height: 300px; background: rgba(14, 165, 233, 0.2); top: 40%; left: 40%; animation-delay: -8s; }
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(60px, 80px) scale(1.1); }
+}
+
+/* 🧭 Navigation */
+.landing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: rgba(13, 17, 23, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.landing-nav h2 { margin: 0; font-weight: 800; letter-spacing: 1px; color: #fff; }
+.nav-cta {
+  background: transparent;
+  color: #c084fc;
+  border: 1px solid #c084fc;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.nav-cta:hover { background: #c084fc; color: #fff; }
+
+/* Wrapper */
+.landing-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem; /* Spacing between sections */
+}
+
+/* 🚀 Hero Section */
+.hero-section {
+  text-align: center;
+  padding-top: 6rem;
+}
+.hero-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: #a1a1aa;
+  height: 40px; 
+  margin-bottom: 2rem;
+}
+.cursor { animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* CTA Button */
+.cta-button {
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+.cta-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.6);
+}
+
+/* 🌍 General Section Styles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+.glass-panel-landing {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3rem;
+  border-radius: 24px;
+  text-align: center;
+}
+.mission-section h2 { margin-bottom: 1.5rem; font-size: 2rem; color: #e4e4e7; }
+.mission-section p { font-size: 1.2rem; color: #a1a1aa; line-height: 1.8; max-width: 800px; margin: 0 auto; }
+
+/* ⚙️ How It Works (Timeline) */
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.step-card {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #1e1e2e;
+  border: 2px solid #818cf8;
+  color: #818cf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem auto;
+}
+.step-card h3 { font-size: 1.3rem; margin-bottom: 1rem; color: #e4e4e7; }
+.step-card p { color: #a1a1aa; font-size: 0.95rem; line-height: 1.6; }
+.step-line {
+  flex: 0.5;
+  height: 2px;
+  background: rgba(129, 140, 248, 0.3);
+  margin-top: 25px;
+  z-index: 1;
+}
+
+/* ✨ Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+.feature-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(168, 85, 247, 0.4);
+}
+.feature-icon { font-size: 3rem; margin-bottom: 1.5rem; }
+.feature-card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: #e4e4e7; }
+.feature-card p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+
+/* 🦶 Footer */
+.landing-footer {
+  text-align: center;
+  padding: 3rem;
+  color: #52525b;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 4rem;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .hero-title { font-size: 3rem; }
+  .steps-container { flex-direction: column; align-items: center; gap: 3rem; }
+  .step-line { display: none; }
+  .features-grid { grid-template-columns: 1fr; }
+  .landing-nav { padding: 1rem 2rem; }
+}
+
+
+/* Ensure text stays above the strings */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding-top: 6rem;
+  overflow: hidden; /* Keeps strings from bleeding out */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Puts text on top */
+}
+
+/* 🎸 STRING TUNE ANIMATION */
+.string-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  transform: translateY(-50%);
+  z-index: 1; /* Sits behind text, above background */
+  opacity: 0.5;
+  pointer-events: none; /* Stops it from blocking button clicks */
+}
+
+.string {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Double width for seamless panning */
+  height: 100%;
+}
+
+/* String 1: Purple Wave */
+.string-1 {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200" viewBox="0 0 1000 200"><path d="M0,100 Q250,10 500,100 T1000,100" fill="none" stroke="rgba(168, 85, 247, 0.6)" stroke-width="2"/></svg>') repeat-x;
+  animation: tuneFlow 8s linear infinite;
+}
+
+/* String 2: Indigo Wave (Different phase and speed) */
+.string-2 {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200" viewBox="0 0 1000 200"><path d="M0,100 Q250,190 500,100 T1000,100" fill="none" stroke="rgba(99, 102, 241, 0.4)" stroke-width="3"/></svg>') repeat-x;
+  animation: tuneFlow 12s linear infinite reverse;
+}
+
+/* String 3: Cyan Wave (Tight vibration) */
+.string-3 {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200"><path d="M0,100 Q125,60 250,100 T500,100" fill="none" stroke="rgba(14, 165, 233, 0.3)" stroke-width="1.5"/></svg>') repeat-x;
+  animation: tuneFlow 5s linear infinite;
+}
+
+/* The actual continuous tuning motion */
+@keyframes tuneFlow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Pans halfway to loop seamlessly */
+}
+
+/* 🧠 AI PARTICLE NETWORK */
+.particle-network {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none; /* Allows you to click buttons through the canvas */
+  background: radial-gradient(circle at center, #1a1a2e 0%, #0d1117 100%);
+}
+
+/* Ensure content sits above the particles */
+.landing-nav, .landing-content, .landing-footer {
+  position: relative;
+  z-index: 10;
+}
+
+/* 🧊 GLASSMORPHIC NAVBAR */
+.landing-nav.glass-nav {
+  position: fixed; /* Keeps it at the top when you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  z-index: 100; /* Sits high above the 3D canvas and text */
+
+  /* The Glass Magic */
+  background: rgba(10, 10, 15, 0.45); /* Dark, semi-transparent base */
+  backdrop-filter: blur(12px); /* Blurs the particles behind it */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); /* Subtle frosted edge */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft drop shadow */
+}
+
+/* Brand Text */
+.nav-brand h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.nav-brand,
+.nav-actions {
+  flex: 1;
+}
+
+/* Center Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex: 1;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a855f7; /* Purple glow on hover */
+}
+
+/* Right Side Actions */
+.nav-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.login-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-btn:hover {
+  color: #ffffff;
+}
+
+.nav-cta {
+  background: #a855f7;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px; /* Pill shape */
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-cta:hover {
+  background: #9333ea;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Hide center links on very small mobile screens to keep it clean */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 100px; 
+}

@@ -1,0 +1,150 @@
+
+
+--- PAGE 6 ---
+4. DESCRIPTION 
+ 
+ 
+    The present invention discloses a computer -implemented grievance management system, hereinafter 
+referred to as DistrictCare, developed to support smart district governance through a transparent, efficient, 
+and participatory mechanism for handling public grievances. The system establishes a centralized digital 
+environment that enables citizens to report civic issues associated with essential public service departments 
+such as road infrastructure, electricity services, sewage or waste management, and water su pply. The 
+invention ensures systematic routing of grievances to the appropriate governmental authorities, continuous 
+monitoring through defined administrative procedures, and accountable resolution within stipulated 
+timelines. 
+    DistrictCare is realized as a web -based and cloud -enabled platform comprising a citizen interaction 
+interface, a grievance handling and routing engine, a role -oriented administrative control framework, a 
+geospatial mapping and visualization layer, a secure data management and analytics layer, and an artificial 
+intelligence-driven assistance module. The system accommodates multiple categories of users including 
+citizens, department -level administrators, and a district -level supervisory authority. Secure access to 
+system functionalities is enforced through identity verification using multiple credentials such as username, 
+password, mobile number, Aadhaar number, and electronic mail address, supplemented by one -time 
+password verification for sensitive opera tions. Role -based access control restricts department 
+administrators to grievances pertaining only to their respective departments, while granting the super 
+administrator comprehensive visibility across all departments within the district. 
+    Citizens interact with the platform through a structured grievance submission interface that facilitates 
+selection of the relevant department, identification of the nature of the issue, and entry of a detailed 
+complaint description. Each grievance is linke d to a geographically tagged location obtained through an 
+interactive digital map that captures latitude and longitude coordinates within a predefined district 
+boundary. The system permits submission of image -based proof to substantiate reported issues  and 
+optionally supports attachment of written representations from community members or voice -based 
+explanations to enhance accessibility and clarity. To minimize redundancy and reduce administrative 
+burden, a spatial validation mechanism is employed to p revent acceptance of duplicate or substantially 
+similar grievances within a predefined geographic radius. 
+    Upon submission, grievances are displayed on a public -facing feed integrated with a map -based 
+visualization interface. Personal identification details of complainants are concealed from public view to 
+preserve privacy while maintaining transparency of comp laint information. Each grievance is visually 
+represented with indicators denoting its current processing state, including pending, under action, resolved, 
+or rejected. Community users are enabled to interact with grievances through support mechanisms such as 
+upvoting, which assist in conveying the relative urgency and severity of reported issues. Authorized 
+administrative personnel communicate verification progress and corrective measures through official 
+comments that are accessible to the public. 
+
+--- PAGE 7 ---
+    Department administrators are empowered to validate grievance authenticity, update processing status, 
+assign field -level officials based on geographic relevance, and document remedial actions undertaken. 
+Automated notifications are generated to inform citi zens of any changes in grievance status. A grievance 
+is designated as resolved only after confirmation from the complainant, supported by uploaded evidence 
+demonstrating that the reported issue has been adequately addressed. Complaints identified as fa lse, 
+unverifiable, or non-compliant with system policies are rejected and excluded from subsequent processing 
+and analysis. 
+    The invention further incorporates an artificial intelligence -based assistance module configured to 
+support users by categorizing grievances, recommending the appropriate department, providing 
+departmental office details and contact information, and explai ning relevant laws, rules, and regulations 
+governing civic services. In addition, the system generates analytical insights for administrative users by 
+aggregating grievance data to present department -wise statistics, resolution trends, and performance 
+indicators. These analytics facilitate informed decision -making and strengthen accountability in district -
+level governance. 
+Accordingly, DistrictCare provides a scalable, secure, and intelligent digital framework that modernizes 
+public grievance redressal by integrating geolocation validation, community participation, structured 
+administrative workflows, and artificial intellig ence within a unified platform suitable for smart district 
+governance. 
+
+--- PAGE 8 ---
+SYSTEM ARCHITECTURE DIAGRAM: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 9 ---
+CLAIMS 
+ 
+I/We Claim, 
+1. A computer-implemented grievance redressal system for smart district governance, 
+comprising: 
+a citizen interface configured to receive civic grievances; 
+a secure role-based authentication and authorization module; 
+a grievance processing and departmental routing module; 
+a geolocation verification and duplicate grievance prevention module; and 
+an administrative workflow management module; 
+wherein the system enables transparent, location-verified, and department-specific handling and 
+resolution of civic grievances within a district. 
+2. The system as claimed in claim 1, wherein the civic grievances relate to one or more public 
+service departments including road infrastructure, electricity services, sewage or waste 
+management, and water supply services. 
+3. The system as claimed in claim 1, wherein the authentication and authorization module verifies 
+users using multiple identifiers including username, password, mobile number, Aadhaar 
+number, and electronic mail address, and assigns role-specific access permissions. 
+4. The system as claimed in claim 1, wherein the system supports multiple user roles comprising 
+citizen users, department administrators, and a district-level supervisory administrator, each role 
+having predefined access privileges and operational responsibilities. 
+5. The system as claimed in claim 1, wherein the citizen interface is configured to receive 
+structured grievance information including department category, issue type, descriptive content, 
+and supporting evidence comprising image files or voice recordings. 
+6. The system as claimed in claim 1, wherein the geolocation verification and duplicate grievance 
+prevention module associates each grievance with geographic coordinates restricted to a 
+predefined district boundary and restricts submission of substantially similar grievances within 
+a predetermined geographic radius. 
+7. The system as claimed in claim 1, wherein the grievance processing and departmental routing 
+module assigns each grievance to a corresponding department administrator based on the 
+grievance category and geographic location. 
+ 
+
+--- PAGE 10 ---
+8. The system as claimed in claim 1, further comprising a public grievance display module 
+configured to present grievance information to the public while concealing personally 
+identifiable details of the complainant and enabling community interaction indicators to express 
+grievance severity. 
+9. The system as claimed in claim 1, wherein the administrative workflow management module 
+tracks grievance progress through predefined stages comprising pending, in-progress, resolved, 
+and rejected, and enables department administrators to verify grievances, update status, assign 
+field-level authorities, and publish official action updates. 
+10. A computer-implemented method for managing civic grievances in a smart district, 
+comprising: 
+receiving a geotagged grievance from a citizen; 
+verifying user identity and geographic location of the grievance; 
+routing the grievance to a relevant department administrator; 
+monitoring grievance status through predefined workflow stages; and 
+closing the grievance upon administrative verification and confirmation by the complainant. 
+ 
+
+
+--- PAGE 11 ---
+ABSTRACT OF THE INVENTION 
+ 
+ 
+    The present invention pertains to a computer -based grievance redressal platform intended for 
+implementation in smart district governance systems. The platform is developed to promote active 
+citizen participation, operational transparency, and improved effectiveness in the delivery of public 
+services. The system, identified as DistrictCare, provides a secure digital environment through which 
+citizens can submit complaints associated with essential civic services including road maintenance, 
+electrical supply, sewage or solid waste management, and water distribution. Each submitted grievance 
+undergoes identity verification, geographic location tagging, and attachment of supporting proof to 
+ensure validity and to restrict repeated submissions within a specified spatial range. 
+    The system operates through a hierarchical administrative structure that includes citizen users, 
+department-level administrative officers, and a district -level supervisory authority, thereby enabling 
+organized complaint assignment and resolution. The platf orm offers real -time tracking of grievance 
+status, public display of complaint progress with complainant anonymity, and community participation 
+features to indicate the urgency and seriousness of reported issues. An integrated artificial intelligence 
+module assists users by categorizing complaints, identifying the appropriate department, and providing 
+access to applicable regulations and departmental contact information. Additionally, the system 
+incorporates an interactive map interface and analytical dashboards to support data-driven governance 
+decisions. Grievance closure is completed only after confirmation by the complainant, thereby 
+strengthening accountability, reducing response delays, and facilitating transparent, efficient, and 
+participatory governance at the district level. 
